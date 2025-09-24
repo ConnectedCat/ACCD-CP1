@@ -29,6 +29,10 @@
             padding-bottom: 8px;
         }
 
+        .active {
+            font-weight: bold;
+        }
+
         nav ul li:last-child {
             border-bottom: none;
         }
@@ -43,6 +47,12 @@
             nav ul {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            nav ul li {
+                border-bottom: none;
+                margin: 10px;
             }
         }
 
@@ -53,7 +63,7 @@
         <nav>
             <ul>
                 <li><a href="#somelinkhere">Home</a></li>
-                <li><a href="#somelinkhere">Work</a></li>
+                <li class="active"><a href="#somelinkhere">Work</a></li>
                 <li><a href="#somelinkhere">Blog</a></li>
             </ul>
         </nav>
